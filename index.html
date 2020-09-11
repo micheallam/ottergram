@@ -17,50 +17,64 @@
     <main class="main-content">
         <ul class="thumbnail-list">
             <!--First otter-->
-            <a href="#">
+            <a href="img/otter1.jpg"    data-image-role="trigger"
+                                        data-image-title="Stayin' Alive"
+                                        data-image-url="img/otter1.jpg">
                 <li class="thumbnail-item">
                     <img class="thumbnail-image" src="img/otter1.jpg" alt="Barry the Otter">
                     <span class="thumbnail-title">Barry</span>
                 </li>
             </a>
             <!--Second otter-->
-            <a href="#">
+            <a href="img/otter2.jpg"    data-image-role="trigger"
+                                        data-image-title="How Deep Is Your Love"
+                                        data-image-url="img/otter2.jpg">
                 <li class="thumbnail-item">
                     <img class="thumbnail-image" src="img/otter2.jpg" alt="Robin the Otter">
                     <span class="thumbnail-title">Robin</span>
                 </li>
             </a>
             <!--Third otter-->
-            <a href="#">
+            <a href="img/otter3.jpg"    data-image-role="trigger"
+                                        data-image-title="You Should Be Dancing"
+                                        data-image-url="img/otter3.jpg">
                 <li class="thumbnail-item">
                     <img class="thumbnail-image" src="img/otter3.jpg" alt="Maurice the Otter">
                     <span class="thumbnail-title">Maurice</span>
                 </li>
             </a>
             <!--Fourth otter-->
-            <a href="#">
+            <a href="img/otter4.jpg"    data-image-role="trigger"
+                                        data-image-title="Night Fever"
+                                        data-image-url="img/otter4.jpg">
                 <li class="thumbnail-item">
                     <img class="thumbnail-image" src="img/otter4.jpg" alt="Lesley the Otter">
                     <span class="thumbnail-title">Lesley</span>
                 </li>
             </a>
             <!--Fifth otter-->
-            <a href="#">
-            <li class="thumbnail-item">
+            <a href="img/otter5.jpg"    data-image-role="trigger"
+                                        data-image-title="To Love Sombody"
+                                        data-image-url="img/otter5.jpg">
+                <li class="thumbnail-item">
                     <img class="thumbnail-image" src="img/otter5.jpg" alt="Barbara the Otter">
                     <span class="thumbnail-title">Barbara</span>
                 </li>
             </a>
 
             <!--Flex Froggy-->
-            <a href="#">
+            <a href="img/Flex Froggy.png"   data-image-role="trigger"
+                                            data-image-title="Flexing On Frogs"
+                                            data-image-url="img/Flex Froggy.png">
                 <li class="thumbnail-item">
                     <img class="thumbnail-image" src="img/Flex Froggy.png" alt="Flex Froggy clear">
                     <span class="thumbnail-title">Flex Froggy</span>
                 </li>
             </a>
             <!--Grid Garden-->
-            <a href="#">
+            <a href="img/Grid Garden.png"   data-image-role="trigger"
+                                            data-image-title="Gardening Everyday"
+                                            data-image-url="img/Grid Garden.png">
                 <li class="thumbnail-item">
                     <img class="thumbnail-image" src="img/Grid Garden.png" alt="Flex Froggy clear">
                     <span class="thumbnail-title">Grid Garden</span>
@@ -70,9 +84,13 @@
 
         <!--The main image-->
         <div class="detail-image-container">
-            <img class="detail-image" src="img/otter1.jpg" alt="">
-            <span class="detail-image-title">Stayin' Alive</span>
+            <div class="detail-image-frame">
+                <img class="detail-image" data-image-role="target" src="img/otter1.jpg" alt="">
+                <span class="detail-image-title" data-image-role="title">Stayin' Alive</span>
+            </div>
         </div>
     </main>
+
+    <script src="scripts/main.js" charset="utf-8"></script>
 </body>
 </html>

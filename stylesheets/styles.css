@@ -53,8 +53,8 @@ a {
     margin: 0;
     padding: 4px 10px;
 
-    background: rgb(96, 125, 139);
-    color: rgb(202, 238, 255);
+    background: rgb(96, 125, 139); /*96, 125, 139*/
+    color: rgb(202, 238, 255); /*202, 238, 255*/
 
     font-size: 18px;
 }
@@ -85,8 +85,8 @@ a {
     list-style: none;
     padding: 0;
 
-    /* This keeps the list from wrapping around if it's too zoomed in*/
-    white-space: nowrap;
+    /* Nowrap keeps the list from wrapping around if it's too zoomed in*/
+    white-space: wrap; /*Wrapping if it's mobile*/
     overflow-x: auto;
 }
 
@@ -102,15 +102,6 @@ a {
     border: 1px solid rgba(100%, 100%, 100%, 0.8)
 }
 
-.detail-image {
-    width: 70%;
-}
-
-.detail-image-frame {
-    position: relative;
-    text-align: center;
-}
-
 .detail-image-container {
     flex: 1 1 auto;
     display: flex;
@@ -118,12 +109,21 @@ a {
     align-items: center;
 }
 
-.detail-image-title {
-    font-family: airstreamregular;
-    position: absolute;
-    bottom: -100px; /*-16px initially -100px for laptop*/
-    left: 250px; /*4px initially 400px for laptop*/
+.detail-image {
+    width: 90%;
+}
 
+.detail-image-frame {
+    position: relative;
+    text-align: center;
+}
+
+.detail-image-title {
+    position: absolute;
+    bottom: -15px; /*-16px initially -100px for laptop*/
+    left: 4px; /*4px initially 400px for laptop*/
+
+    font-family: airstreamregular;
     color: white;
     font-size: 40px;
     text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px; /*15, 18, 30*/
